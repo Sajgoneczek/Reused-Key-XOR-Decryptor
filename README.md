@@ -23,13 +23,25 @@ The program implements a statistical frequency analysis attack. Since we have 27
 ## Getting Started
 
 ### Prerequisites
-* A C compiler (like gcc or clang).
+* A C compiler (like `gcc` or `clang`).
+* The `make` utility
 
 ### Compilation
-Use the following command to compile the source code:
+The project includes a `Makefile` for easy builds. To compile, run:
 ```bash
-gcc -o MTP_attack MTP_attack.c
+make
 ```
 Simply run the executable:
 ```bash
 ./MTP_attack
+```
+To remove the compiled binary and clean the directory:
+```bash
+make clean
+```
+
+### Project Structure
+* `MTP_attack.c`: Core implementation in C.
+* `Makefile`: Autoamtion script for compilation.
+* `LICENSE`: MIT License (Eryk Tokarek).
+* `README.md`: Documentation
