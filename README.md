@@ -42,7 +42,7 @@ make clean
 
 ## Project Structure
 * `MTP_attack.c`: Core implementation in C.
-* `Makefile`: Autoamtion script for compilation.
+* `Makefile`: Automation script for compilation.
 * `LICENSE`: MIT License (Eryk Tokarek).
 * `README.md`: Documentation.
 * `.gitignore`: Prevents compiled binaries from being tracked by Git.
