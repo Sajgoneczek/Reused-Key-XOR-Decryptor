@@ -1,0 +1,26 @@
+# === Build Outputs ===
+# Ignore the compiled executable binary
+MTP_attack
+MTP_attack.exe
+
+# Ignore object files
+*.o
+
+# === System Files ===
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# === Editor & IDE folders ===
+# VSC settings
+.vscode/
+
+# JetBrains
+.idea/
+
+# Temporary files from editors (like Vim)
+*.swp
+*~
