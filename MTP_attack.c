@@ -139,9 +139,9 @@ int main()
         {
             fprintf(stderr, "HEX structure Error in cipher %zu\n", i);
             // Free already allocated memory before exiting
-            free(byte_ciphers);
             for (size_t j = 0; j < i; j++)
                 free(byte_ciphers[j].data);
+            free(byte_ciphers);
             return 1;
         }
         byte_ciphers[i].len = strlen(hex_ciphers[i]) / 2;
