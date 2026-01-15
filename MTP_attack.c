@@ -84,27 +84,26 @@ unsigned char *hex_to_bytes(const char *hex_str)
 
 int score_byte(unsigned char b)
 {
-    // Space and ehmmmmm some type of spacing
     if (b == ' ')
-        return 4;
+        return 12;
     if (b == '\n' || b == '\r' || b == '\t')
         return 1;
 
     // Lowercase letters
-    if (strchr("etaoin", b)) return 8; // Highest value
-    if (strchr("shrdlu", b)) return 6;
-    if (strchr("cmfwygpb", b)) return 4;
-    if (strchr("vkxqjz", b)) return 2; // Lowest value
+    if (strchr("etaoin", b)) return 10; // Highest value
+    if (strchr("shrdlu", b)) return 8;
+    if (strchr("cmfwyg", b)) return 6;
+    if (strchr("pbvkxqjz", b)) return 3; // Lowest value
 
     // Uppercase letters
-    if (strchr("ETAOIN", b)) return 6; // Highest value
-    if (strchr("SHRDLU", b)) return 4;
+    if (strchr("ETAOIN", b)) return 4; // Highest value
+    if (strchr("SHRDLU", b)) return 3;
     if (strchr("CMFWYGPB", b)) return 2;
     if (strchr("VKXQJZ", b)) return 1; // Lowest value
 
     // Numbers, interpunction signs
     if (strchr("0123456789.,:;?!()-/\\\'\"", b))
-        return 2;
+        return 4;
 
     // NOT printable symbols
     if (b >= 32 && b <= 126)
