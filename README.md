@@ -40,7 +40,7 @@ To remove the compiled binary and clean the directory:
 make clean
 ```
 
-### Project Structure
+## Project Structure
 * `MTP_attack.c`: Core implementation in C.
 * `Makefile`: Autoamtion script for compilation.
 * `LICENSE`: MIT License (Eryk Tokarek).
