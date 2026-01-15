@@ -17,7 +17,7 @@ The program implements a statistical frequency analysis attack. Since we have 27
 1. **Brute Force**: For each byte position, the program tries all 256 possible key values (`0x00`, `0xFF`).
 2. **Scoring**: For every guess, it "decrypts" the byte across all 27 ciphertexts and assigns a score based on how closely the results match **English** letter frequencies.
      * High scores are given for common characters (space, 'e', 't', 'a').
-     * Penalty points are given for unprintable characters
+     * Penalty points are given for unprintable characters.
 3. **Recovery**: The key byte with the highest cumulative score is selected as the winner for that position.
 
 ## Getting Started
