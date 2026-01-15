@@ -46,3 +46,6 @@ make clean
 * `LICENSE`: MIT License (Eryk Tokarek).
 * `README.md`: Project documentation.
 * `.gitignore`: Prevents compiled binaries from being tracked by Git.
+
+## Ethics
+This is a cryptanalysis tool for demonstrating the insecurity of reusing XOR keys (Many‑Time Pad vulnerability). Use only on data you own or are authorized to analyze. Misuse against others' data is unethical and likely illegal.
